@@ -1,0 +1,54 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 18
+
+[font.bold]
+family = "Inconsolata Nerd Font"
+style = "Bold"
+
+[font.normal]
+family = "Inconsolata Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[scrolling]
+history = 500
+multiplier = 3
+
+[terminal.shell]
+{{ if eq .chezmoi.osRelease.id "nixos" }}
+program = "/run/current-system/sw/bin/zsh"
+{{else}}
+program = "/usr/bin/zsh"
+{{end}}
+
+[window]
+dynamic_padding = false
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 100
+lines = 85
+
+[window.padding]
+x = 0
+y = 0
+
+[general]
+import = ["~/.config/alacritty/catppuccin-frappe.toml"]
+
+[terminal]

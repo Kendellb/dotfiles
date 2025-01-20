@@ -6,6 +6,8 @@
 #fi
 eval "$(starship init zsh)"
 
+export EDITOR="nvim"
+export VISUAL="nvim"
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -51,8 +53,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export MANPAGER='nvim +Man!'
 
-
+{{ if eq .chezmoi.osRelease.id  "nixos" }}
 # Function to update the entire system (NixOS configuration)
 alias update-system="sudo nixos-rebuild switch --flake"
-
+{{ end }}
 

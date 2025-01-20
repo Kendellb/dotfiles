@@ -1,0 +1,51 @@
+return require "paq" {
+    "savq/paq-nvim", -- Let Paq manage itself
+
+    {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+
+	{'nvim-lua/plenary.nvim'},
+
+    { 'nvim-telescope/telescope.nvim'},
+
+    {'catppuccin/nvim', as = "catppuccin" },
+
+    {'nvim-treesitter/playground'},
+
+    {'theprimeagen/harpoon'},
+
+    {'mbbill/undotree'},
+
+    {'tpope/vim-fugitive'},
+
+    {'rafamadriz/friendly-snippets'},
+
+    {'L3MON4D3/LuaSnip'},
+
+    "saadparwaiz1/cmp_luasnip",
+
+    {'romgrk/fzy-lua-native',build = 'make'},
+
+    --"max397574/care.nvim",
+
+    {'saghen/blink.cmp', branch = 'release'},
+
+    --lspZero
+	{'neovim/nvim-lspconfig'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/nvim-cmp'},
+
+    {{ if not (eq .chezmoi.osRelease.id  "nixos") }}
+    {"williamboman/mason.nvim", build = ':MasonUpadate' }, --does not work on nixos install lsp through home-manager
+
+    'williamboman/mason-lspconfig.nvim',  -- Optional mason LSP config
+    {{end}}
+
+    'rafamadriz/friendly-snippets',      -- Friendly snippets
+
+    'ThePrimeagen/vim-be-good',
+
+    'xvzc/chezmoi.nvim',
+
+    'alker0/chezmoi.vim',
+}
+
