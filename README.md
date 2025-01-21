@@ -1,3 +1,3 @@
 https://www.chezmoi.io/user-guide/daily-operations/
-
-`chezmoi init --apply --verbose https://github.com/Kendellb/dotfiles.git`
+## Install and Apply dotfiles
+`sh -c "$(curl -fsLS get.chezmoi.io/lb)" --init --apply $kendellb`
