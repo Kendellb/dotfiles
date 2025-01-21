@@ -38,39 +38,40 @@ https://www.chezmoi.io/user-guide/daily-operations/
 
 ### i3
 
-[i3](https://i3wm.org/) is a dynamic tiling window manager that maximizes screen real estate and enhances productivity with keyboard-driven workflows. My configuration includes:
+[i3](https://i3wm.org/) is a dynamic tiling window manager that maximizes screen real estate and enhances productivity with keyboard-driven workflows.
 
 **Configuration File**: `~/.config/i3/config`
 
 ### Neovim
 
-[Neovim](https://neovim.io/) is a highly extensible text editor, perfect for development and writing. I’ve set up Neovim with the following key features:
+[Neovim](https://neovim.io/) is a highly extensible text editor, perfect for development and writing.
 
 **Configuration File**: `~/.config/nvim/init.vim`
 
 ### Polybar
 
-[Polybar](https://github.com/polybar/polybar) is a highly customizable status bar for X11, which can be used to display system stats, workspaces, and other important information. My configuration includes:
+[Polybar](https://github.com/polybar/polybar) is a highly customizable status bar for X11, which can be used to display system stats, workspaces, and other important information.
 
 **Configuration File**: `~/.config/polybar/config`
 
 ### Rofi
 
-[Rofi](https://github.com/davatorium/rofi) is a fast, window switcher, application launcher, and dmenu replacement. I use it for:
+[Rofi](https://github.com/davatorium/rofi) is a fast, window switcher, application launcher, and dmenu replacement.
+[Theme install](https://github.com/catppuccin/rofi/tree/main/basic)
 
 
 **Configuration File**: `~/.config/rofi/config.rasi`
 
 ### Picom
 
-[Picom](https://github.com/yshui/picom) is a compositor for X11 that provides effects like transparency, shadows, and fading. It’s used to enhance the visual experience in my setup, especially for:
+[Picom](https://github.com/yshui/picom) is a compositor for X11 that provides effects like transparency, shadows, and fading. It’s used to enhance the visual experience in my setup.
 
 
 **Configuration File**: `~/.config/picom/picom.conf`
 
 ### Starship
 
-[Starship](https://starship.rs/) is a cross-shell prompt that provides a minimal and customizable experience. I use it for:
+[Starship](https://starship.rs/) is a cross-shell prompt that provides a minimal and customizable experience.
 
 
 **Configuration File**: `~/.config/starship.toml`
