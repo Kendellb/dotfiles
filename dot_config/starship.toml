@@ -1,6 +1,10 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# Sets user-defined palette
+# Palettes must be defined _after_ this line
+palette = "catppuccin_frappe"
+
 format = """
 $username\
 $hostname\
@@ -46,9 +50,6 @@ style = "bold yellow"
 format = '[\[$time\]]($style)'
 use_12hr = true
 
-# Sets user-defined palette
-# Palettes must be defined _after_ this line
-palette = "catppuccin_frappe"
 
 [palettes.catppuccin_frappe]
 rosewater = "#f2d5cf"
