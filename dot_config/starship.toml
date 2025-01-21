@@ -43,8 +43,7 @@ symbol = " "
 [time]
 disabled = false
 style = "bold yellow"
-format = '[\[ $time \]]($style) '
-time_format = '%T'
+format = '[\[$time\]]($style)'
 use_12hr = true
 
 # Sets user-defined palette
