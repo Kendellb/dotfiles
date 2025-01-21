@@ -32,8 +32,8 @@ zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 
 plugins=(zsh-autosuggestions)
 
+source ~/.zsh/catppuccin_frappe-zsh-syntax-highlighting.zsh
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source ./zsh-syntax-highlighting/themes/catppuccin_frappe-zsh-syntax-highlighting.zsh
 
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
