@@ -12,7 +12,7 @@ $bun\
 $python\
 $rust\
 $docker_context\
-[$time]\
+$time\
 $line_break\
 $jobs\
 $character\
@@ -43,8 +43,8 @@ symbol = " "
 [time]
 disabled = false
 style = "bold yellow"
-#format = "[[$time]]"
-time_format = "%T"
+format = '[\[ $time \]]($style) '
+time_format = '%T'
 use_12hr = true
 
 # Sets user-defined palette
