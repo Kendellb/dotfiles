@@ -12,7 +12,7 @@ $bun\
 $python\
 $rust\
 $docker_context\
-[[$time]]\
+[$time]\
 $line_break\
 $jobs\
 $character\
