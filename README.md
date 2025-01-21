@@ -71,7 +71,7 @@ https://www.chezmoi.io/user-guide/daily-operations/
 
 **Configuration File**: `~/.config/starship.toml`
 
-## Neofetch
+### Neofetch
 
 [Neofetch](https://github.com/dylanaraps/neofetch) is a command-line system information tool written in bash. It displays information about your system in a visually appealing way, with an ASCII logo of your operating system and important system details.
 
