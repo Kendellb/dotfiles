@@ -18,6 +18,10 @@ This setup is optimized for efficiency, customization, and a smooth development 
 ## Overview
 
 This setup is a combination of powerful tools and streamlined configurations to help you stay productive while maintaining an efficient and aesthetically pleasing development environment. The configurations are handled through **NixOS**, a declarative operating system that allows you to define system configurations in a reproducible and version-controlled way. The system setup is tailored to provide a smooth and fast user experience using a tiling window manager, modern terminal, and a variety of essential utilities for development and customization.
+### Wallpaper
+![Wallpaper](Wallpapers/wp4199379-jean-giraud-moebius-wallpapers.png)
+
+### Screenshot
 
 
 ## Installation and Setup
