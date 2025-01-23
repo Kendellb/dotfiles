@@ -27,7 +27,7 @@ return require "paq" {
 
     --"max397574/care.nvim",
 
-    {{ if eq.chezmoi.osRelease.id "nixos" }}
+    {{ if eq .chezmoi.osRelease.id "nixos" }}
     {'saghen/blink.cmp', build = 'nix run .#build-plugin'},
     {{else}}
     {'saghen/blink.cmp', branch = 'release'},
