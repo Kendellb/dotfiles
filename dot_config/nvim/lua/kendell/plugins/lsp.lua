@@ -35,4 +35,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
 require('lspconfig').lua_ls.setup({})
 
 
-require('lspconfig').nil_ls.setup {}
+require('lspconfig').nil_ls.setup {
+  capabilities = capabilities,
+  settings = {
+    nil_ls = {
+      formatter = { command = {"nixfmt"} },
+    },
+  },
+}
+
