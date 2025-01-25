@@ -38,7 +38,7 @@ require('lspconfig').lua_ls.setup({})
 require('lspconfig').nil_ls.setup {
       autostart = true,
       capabilities = caps,
-      cmd = { lsp_path },
+      --cmd = { lsp_path },
       settings = {
         ['nil'] = {
           testSetting = 42,
