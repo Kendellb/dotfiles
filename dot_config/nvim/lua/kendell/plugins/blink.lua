@@ -21,15 +21,14 @@ require('blink.cmp').setup({
         use_nvim_cmp_as_default = true,
         nerd_font_variant = 'mono',
     },
+  opts = {
+    snippets = { preset = 'luasnip' },
+    -- ensure you have the `snippets` source (enabled by default)
     sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
-        opts = {
-        snippets = {
-            preset = 'luasnip',
-            }
-        },
+      default = { 'lsp', 'path', 'snippets', 'buffer' },
     },
-    --opts_extend = { "sources.default" },
+  },
+  --opts_extend = { "sources.default" },
 })
 
 -- LSP Configuration
