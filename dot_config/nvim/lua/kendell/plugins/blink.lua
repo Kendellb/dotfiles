@@ -1,4 +1,4 @@
-  require('blink.cmp').setup({
+require('blink.cmp').setup({
     keymap = {
         preset = 'default',
         ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
@@ -14,29 +14,35 @@
         --Disable snippets
         --['<Tab>'] = { 'snippet_forward', 'fallback' },
         --['<S-Tab>'] = { 'snippet_backward', 'fallback' },
-        ['<Tab>'] = { },
-        ['<S-Tab>'] = { },
+        ['<Tab>'] = {},
+        ['<S-Tab>'] = {},
     },
     appearance = {
-      use_nvim_cmp_as_default = true,
-      nerd_font_variant = 'mono',
+        use_nvim_cmp_as_default = true,
+        nerd_font_variant = 'mono',
     },
     sources = {
-      default = { 'lsp', 'path', 'snippets', 'buffer' },
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        snippets = {
+            preset = 'luasnip',
+            opts = {
+                search_paths = { vim.fn.stdpath('config') .. '/lua/kendell/plugins' }
+            }
+        },
     },
     --opts_extend = { "sources.default" },
-  })
+})
 
-  -- LSP Configuration
-  local lspconfig = require('lspconfig')
-  local capabilities = require('blink.cmp').get_lsp_capabilities()
+-- LSP Configuration
+local lspconfig = require('lspconfig')
+local capabilities = require('blink.cmp').get_lsp_capabilities()
 
-  -- Example of defining LSP servers
-  local servers = {
+-- Example of defining LSP servers
+local servers = {
     lua_ls = {}, -- Replace 'lua_ls' with your desired LSP servers
-  }
+}
 
-  for server, config in pairs(servers) do
+for server, config in pairs(servers) do
     config.capabilities = capabilities
     lspconfig[server].setup(config)
-  end
+end
