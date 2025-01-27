@@ -1,4 +1,3 @@
-require('luasnip')
   require('blink.cmp').setup({
     keymap = {
         preset = 'default',
@@ -23,7 +22,7 @@ require('luasnip')
       nerd_font_variant = 'mono',
     },
     sources = {
-      default = { 'lsp', 'path', 'luasnip', 'buffer' },
+      default = { 'lsp', 'path', 'snippets', 'buffer' },
     },
     --opts_extend = { "sources.default" },
   })
