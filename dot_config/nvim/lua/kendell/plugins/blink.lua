@@ -12,10 +12,10 @@
         ['<C-f>'] = { 'scroll_documentation_down', 'fallback' },
 
         --Disable snippets
-        --['<Tab>'] = { 'snippet_forward', 'fallback' },
-        --['<S-Tab>'] = { 'snippet_backward', 'fallback' },
-        ['<Tab>'] = { },
-        ['<S-Tab>'] = { },
+        ['<Tab>'] = { 'snippet_forward', 'fallback' },
+        ['<S-Tab>'] = { 'snippet_backward', 'fallback' },
+        --['<Tab>'] = { },
+        --['<S-Tab>'] = { },
     },
     appearance = {
       use_nvim_cmp_as_default = true,
