@@ -22,7 +22,7 @@
       nerd_font_variant = 'mono',
     },
     sources = {
-      default = { 'lsp', 'path', 'snippets', 'buffer' },
+      default = { 'lsp', 'path', 'luasnip', 'buffer' },
     },
     --opts_extend = { "sources.default" },
   })
