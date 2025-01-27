@@ -23,10 +23,9 @@ require('blink.cmp').setup({
     },
     sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
+        opts = {
         snippets = {
             preset = 'luasnip',
-            opts = {
-                search_paths = { vim.fn.stdpath('config') .. '/lua/kendell/plugins' }
             }
         },
     },
