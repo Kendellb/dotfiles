@@ -60,7 +60,7 @@ export MANPAGER='nvim +Man!'
 
 {{ if eq .chezmoi.osRelease.id  "nixos" }}
 # Function to update the entire system (NixOS configuration)
-alias rebuild=~/nixos/rebuild.sh 
+alias rebuild='~/nixos/rebuild.sh' 
 #. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 {{ end }}
 
