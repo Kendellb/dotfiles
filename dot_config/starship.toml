@@ -10,6 +10,7 @@ $username\
 $hostname\
 $directory\
 $git_branch\
+$nix_shell\
 $fill\
 $nodejs\
 $bun\
@@ -54,6 +55,9 @@ use_12hr = true
 [cmd_duration]
 min_time = 500
 format = 'took [$duration](bold flamingo)'
+
+[nix_shell]
+disabled = true
 
 
 [palettes.catppuccin_frappe]
