@@ -200,6 +200,9 @@ exec_always --no-startup-id dunst
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
+#Wallpaper
+exec --no-startup-id feh --bg-scale Wallpapers/wp4199379-jean-giraud-moebius-wallpapers.png Wallpapers/OurladyOfLourdes.jpg
+
 
 #catppuccin Fappe Theme old
 # target                 title     bg          text        indicator   border
