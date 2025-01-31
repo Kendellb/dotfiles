@@ -54,7 +54,7 @@ use_12hr = true
 
 [cmd_duration]
 min_time = 500
-format = 'took [$duration](bold flamingo)'
+format = ' [$duration](bold flamingo)'
 
 [nix_shell]
 disabled = true
