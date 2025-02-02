@@ -127,6 +127,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+{{ if eq .chezmoi.hostname "Arc-170" }}
 #use workspaces on different monitors
 workspace "1" output DP-2
 workspace "2" output DP-2
@@ -138,6 +139,7 @@ workspace "7" output DVI-D-1
 workspace "8" output DVI-D-1
 workspace "9" output DVI-D-1
 workspace "10" output DVI-D-1
+{{end}}
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
