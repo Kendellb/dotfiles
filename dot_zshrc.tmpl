@@ -51,10 +51,10 @@ alias vim='nvim -o'
 alias clock='tty-clock -c -C 7 -t -B -S'
 alias .edit='chezmoi edit'
 alias .='chezmoi'
-{{ if .chezmoi.hostname "kendell-hpenvyx360convertible15mee0xxx"}}
+{{- if eq .chezmoi.hostname "kendell-hpenvyx360convertible15mee0xxx"}}
 alias laptop='autorandr -l laptop && pactl set-default-sink alsa_output.pci-0000_04_00.6.HiFi__Speaker__sink'
 alias hdmi='autorandr -l HDMI && pactl set-default-sink alsa_output.pci-0000_04_00.1.HiFi__HDMI1__sink'
-{{ end }}
+{{- end }}
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
