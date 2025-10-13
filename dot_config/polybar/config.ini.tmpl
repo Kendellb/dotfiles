@@ -44,7 +44,7 @@ separator-foreground = ${colors.disabled}
 font-0 = Inconsolata Nerd Font;2
 
 modules-left = xworkspaces xwindow
-modules-right = toggle-output pulseaudio backlight filesystem memory cpu wlan eth battery 
+modules-right = input-toggle pulseaudio backlight filesystem memory cpu wlan eth battery 
 modules-center = date
 
 cursor-click = pointer
@@ -353,11 +353,12 @@ bar-indicator = |
 bar-fill = ─
 bar-empty = ─
 
-[module/toggle-output]
+[module/input-toggle]
 type = custom/script
-exec = ~/.config/polybar/scripts/toggle_display_audio.sh
-click-left = ~/.config/polybar/scripts/toggle_display_audio.sh
+exec = ~/.config/polybar/scripts/input_toggle.sh
+click-left = ~/.config/polybar/scripts/input_toggle.sh
 interval = 10
+label-padding = 2
 
 
 [settings]
