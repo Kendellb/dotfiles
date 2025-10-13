@@ -44,7 +44,7 @@ separator-foreground = ${colors.disabled}
 font-0 = Inconsolata Nerd Font;2
 
 modules-left = xworkspaces xwindow
-modules-right = pulseaudio backlight filesystem memory cpu wlan eth battery 
+modules-right = toggle-output pulseaudio backlight filesystem memory cpu wlan eth battery 
 modules-center = date
 
 cursor-click = pointer
@@ -352,6 +352,13 @@ bar-width = 10
 bar-indicator = |
 bar-fill = ─
 bar-empty = ─
+
+[module/toggle-output]
+type = custom/script
+exec = ~/.config/polybar/scripts/toggle_display_audio.sh
+click-left = ~/.config/polybar/scripts/toggle_display_audio.sh
+interval = 10
+
 
 [settings]
 screenchange-reload = true
